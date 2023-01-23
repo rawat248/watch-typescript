@@ -1,0 +1,20 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.form {
+  width: 200px;
+  margin-left: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+@media only screen and (max-width: 764px) and (min-width: 1029px) {
+  .form {
+    width: 150px;
+  }
+}
