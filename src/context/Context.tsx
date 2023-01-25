@@ -27,7 +27,8 @@ interface ContextProps {
 }
 
 export const dataContext = createContext<ContextProps>({} as ContextProps);
-const allCatValues = [...new Set(Menu.map((curElem) => curElem.cat)), "All"];
+// const allCatValues = [...new Set(Menu.map((curElem) => curElem.cat)), "All"];
+const allCatValues = [...Array.from(new Set(Menu.map((curElem) => curElem.cat))), "All"];
 console.log(allCatValues);
 const maxArray = Menu.map((item) => item.price);
 const maxValue = Math.max(...maxArray);
